@@ -10,6 +10,7 @@ import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import {ChartsModule} from 'ng2-charts';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
     ProgressComponent,
     Graficas1Component,
     IncrementadorComponent,
-    AccoutSettingsComponent
+    AccoutSettingsComponent,
+    PromesasComponent
   
   ],
   exports: [

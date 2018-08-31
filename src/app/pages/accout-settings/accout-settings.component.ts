@@ -11,16 +11,18 @@ import { SettingsService } from '../../services/settings/settings.service';
 
 export class AccoutSettingsComponent implements OnInit {
 
-  constructor(@Inject(DOCUMENT)  private _document, private _ajustes: SettingsService) { }
+  constructor(@Inject(DOCUMENT)  private _document, private _ajustes: SettingsService) { 
+    
+  }
 
   ngOnInit() {
+    this.colocarCheck();
   }
 
 
   cambiarColor(tema:string, link:any) {
     this.aplicarCheck(link);
     this._ajustes.aplicarTema(tema);
-    
 
   } 
 
@@ -35,7 +37,7 @@ export class AccoutSettingsComponent implements OnInit {
     link.classList.add('working');
   }
 
-/*   colocarCheck() {
+   colocarCheck() {
 
     let selectores:any = document.getElementsByClassName('selector');
     let tema = this._ajustes.ajustes.tema;
@@ -46,7 +48,7 @@ export class AccoutSettingsComponent implements OnInit {
         break;
       }
     }
-  } */
+  } 
 
 
 }
